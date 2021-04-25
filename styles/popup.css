@@ -1,0 +1,132 @@
+#game-of-spoilers-popup {
+	font-family: "Segoe UI", "Lucida Grande", Tahoma, serif;
+	font-size: 100%;
+	min-width: 380px;
+	text-align: center;
+	background-color: #F3F3F3;
+	max-height: 100%;
+}
+#game-of-spoilers-popup #title {
+	font-size: 30px;
+}
+#game-of-spoilers-popup #subtitle {
+	font-size: 15px
+}
+#game-of-spoilers-popup #subtitle a {
+	outline: none;
+	color: #071FE0;
+	font-weight: bold;
+	text-decoration: none
+}
+#game-of-spoilers-popup #subtitle a:hover {
+	color: black
+}
+#game-of-spoilers-popup .setting-holder {
+	height: 2em;
+	line-height: 2.1em;
+	font-size: 1.08em;
+	margin-top: 4px
+}
+#game-of-spoilers-popup .setting-holder textarea {
+	border-radius: 6px;
+	border-color: #c1bebe;
+	padding: 4px;
+	width: 63%;
+	height: 3em;
+	outline: none;
+	transition: width 0.5s ease-in 0s, height 0.5s ease-in 0s
+}
+#game-of-spoilers-popup .setting-holder textarea:focus {
+	width: 90%;
+	height: 5em
+}
+#game-of-spoilers-popup .setting-holder .onoffswitch, #game-of-spoilers-popup .setting-holder .setting-text {
+	float: left
+}
+#game-of-spoilers-popup .setting-holder .setting-text {
+	padding-left: 1px
+}
+#game-of-spoilers-popup .setting-holder .setting-text.centered {
+	width: 100%;
+	text-decoration: underline
+}
+#game-of-spoilers-popup #num-spoilers-prevented {
+	margin-top: 18px;
+	border-top: 1px solid #C1BEBE;
+	padding-top: 9px;
+	padding-bottom: 3px
+}
+#game-of-spoilers-popup .onoffswitch {
+	position: relative;
+	width: 85px;
+	-ms-user-select: none
+}
+#game-of-spoilers-popup .onoffswitch:hover .onoffswitch-switch {
+	background-color: black
+}
+#game-of-spoilers-popup .onoffswitch-checkbox {
+	display: none
+}
+#game-of-spoilers-popup .onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid black;
+	border-radius: 20px;
+	width: 76px
+}
+#game-of-spoilers-popup .onoffswitch-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease-in 0s
+}
+#game-of-spoilers-popup .onoffswitch-inner:before, #game-of-spoilers-popup .onoffswitch-inner:after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 30px;
+	padding: 0;
+	line-height: 30px;
+	font-size: 14px;
+	color: white;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: bold;
+	box-sizing: border-box
+}
+#game-of-spoilers-popup .onoffswitch-inner:before {
+	content: "ON";
+	padding-right: 27px;
+	background-color: green;
+	color: #FFFFFF
+}
+#game-of-spoilers-popup .onoffswitch-inner:after {
+	content: "OFF";
+	padding-right: 9px;
+	color: white;
+	text-align: right;
+	background-color: red
+}
+#game-of-spoilers-popup .onoffswitch-switch {
+	display: block;
+	width: 34px;
+	margin: 0px;
+	background-color: red;
+	background-size: 30px 30px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 49px;
+	border-radius: 20px;
+	transition: all 0.3s ease-in 0s;
+	background-repeat: no-repeat;
+	background-position: 2px 1px;
+	border: 1px solid black
+}
+#game-of-spoilers-popup .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-inner {
+	margin-left: 0;
+}
+#game-of-spoilers-popup .onoffswitch-checkbox:checked+.onoffswitch-label .onoffswitch-switch {
+	background-color: green;
+	right: 5px
+}
